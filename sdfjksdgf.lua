@@ -2,7 +2,12 @@ local groupId = 11872496
 
 local function onGroupPlayerJoin(player)
     print(player.Name .. " from group " .. groupId .. " has joined the game!")
-    -- Add your custom logic here
+    OrionLib:MakeNotification({
+	Name = "Staff Detection:",
+	Content = "We have Detected Staff in your game!",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
 end
 
 local function isPlayerInGroup(player)
