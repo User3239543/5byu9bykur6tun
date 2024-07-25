@@ -16,7 +16,7 @@ local function isPlayerInGroup(player)
     return isInGroup
 end
 
-local function detectGroupPlayers()
+local function fuckingdetect()
     for _, player in ipairs(game.Players:GetPlayers()) do
         if isPlayerInGroup(player) then
             onGroupPlayerJoin(player)
@@ -31,4 +31,4 @@ local function detectGroupPlayers()
 end
 
 -- Automatically call the function to detect group players
-detectGroupPlayers()
+fuckingdetect()
